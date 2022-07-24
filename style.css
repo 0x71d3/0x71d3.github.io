@@ -1,17 +1,44 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #008080;
+    background-color: #39c5bb;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
 }
 
 img {
-    width: 80px;
-
+    width: 5em;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-
     margin: auto;
+}
+
+ul {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding-top: 8em;
+}
+
+li {
+    display: inline;
+    font-size: large;
+    padding: 0 0.5em;
+}
+
+p {
+    font-size: small;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 1em;
+    left: 0;
 }
