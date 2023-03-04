@@ -10,7 +10,7 @@ header {
 }
 
 .icon {
-    display: block;
+    display: inline-block;
     width: 3em;
 }
 
