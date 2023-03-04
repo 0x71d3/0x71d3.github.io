@@ -1,10 +1,11 @@
 body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0;
 }
 
 .hero {
     color: white;
-    background-color: #39c5bb;
+    background-color: #15c0b0;
     height: 100vh;
     position: relative;
 }
