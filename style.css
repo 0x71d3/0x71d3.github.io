@@ -36,6 +36,27 @@ body {
     }
 }
 
+.bio {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.bio a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.bio a:hover {
+    opacity: 0.8;
+}
+
+.bio a::before {
+    content: "▶ ";
+}
+
 .social {
     position: absolute;
     right: 0;
@@ -54,6 +75,10 @@ body {
 .social li a {
     color: white;
     font-size: large;
+}
+
+.social li a:hover {
+    opacity: 0.8;
 }
 
 .copy {

@@ -1,0 +1,51 @@
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 0;
+}
+
+header {
+    color: white;
+    background-color: #15c0b0;
+    padding: 1em;
+}
+
+.icon {
+    display: block;
+    width: 3em;
+}
+
+main {
+    margin: 5em 0;
+}
+
+section {
+    margin: 0;
+    margin-top: 3em;
+}
+
+h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.container {    
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+li::marker {
+    color: #15c0b0;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 5em 0;
+}
+
+.copy {
+    font-size: small;
+    text-align: center;
+    margin: 0;
+}
