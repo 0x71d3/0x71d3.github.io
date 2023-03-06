@@ -9,8 +9,13 @@ header {
     padding: 1em;
 }
 
+.top {
+    display: block;
+    width: fit-content;
+}
+
 .icon {
-    display: inline-block;
+    display: block;
     width: 3em;
 }
 
