@@ -45,13 +45,13 @@ header {
     position: absolute;
     z-index: 1;
     width: 100%;
-    padding: 32px;
+    padding: 2rem;
 }
 
 .link {
     display: flex;
     justify-content: end;
-    gap: 32px;
+    gap: 2rem;
     font-size: large;
     font-weight: bold;
 }
@@ -61,15 +61,22 @@ footer {
     bottom: 0;
     z-index: 1;
     width: 100%;
-    padding: 32px;
+    padding: 2rem;
 }
 
 .social {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 2rem;
     font-size: large;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}
+
+.social__img {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    filter: invert(1);
 }
 
 .copy {
