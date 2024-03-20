@@ -1,0 +1,47 @@
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  color: white;
+  background-color: #15c0b0;
+  padding: 1em;
+
+  img {
+    display: block;
+    width: 3em;
+  }
+}
+
+main {
+  margin: 5em 0;
+
+  h3 {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 3em;
+  }
+
+  li::marker {
+    color: #15c0b0;
+  }
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 5em 0;
+
+  p {
+    font-size: small;
+    text-align: center;
+    margin: 0;
+  }
+}
