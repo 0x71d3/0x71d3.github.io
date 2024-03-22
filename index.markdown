@@ -51,8 +51,12 @@ title: bio
 - [Multi-Task Learning of Generation and Classification for Emotion-Aware Dialogue Response Generation](https://aclanthology.org/2021.naacl-srw.15.pdf)<br>Tatsuya Ide, Daisuke Kawahara<br>Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Student Research Workshop, June 2021
 - [生成と分類のマルチタスク学習による. 感情が考慮された対話応答生成](https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/B4-2.pdf)<br>井手竜也, 河原大輔<br>言語処理学会第27回年次大会(NLP2021), 2021年3月
 
-### 他
+### その他
 
+- 2023年6月<br>[BigBird日本語Pretrainedモデル](https://huggingface.co/nlp-waseda/bigbird-base-japanese) 公開
+- 2023年3月<br>[日本語版CICERO](https://github.com/nlp-waseda/dcsg-ja) 公開
+- 2023年3月<br>[日本語版COMET-ATOMIC](https://github.com/nlp-waseda/comet-atomic-ja) 公開
+- 2021年12月-2022年5月<br>GPT-2日本語Pretrainedモデル 公開 [jawiki版](https://huggingface.co/nlp-waseda/gpt2-small-japanese-wikipedia) [jawiki+cc100版](https://huggingface.co/nlp-waseda/gpt2-small-japanese)
 - 2021年9月<br>ドコモハッカソン チーム優勝
-- 2021年-2023年<br>LINE株式会社 共同研究
-- 2020年-2023年<br>河原研究室 配属
+- 2021年-2023年<br>LINE株式会社共同研究「超大規模日本語言語モデルを用いた対話システムの研究」開始
+- 2020年-2023年<br>[河原研究室](https://nlp-waseda.jp/) 配属
