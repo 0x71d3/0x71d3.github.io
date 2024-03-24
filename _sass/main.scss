@@ -1,47 +1,57 @@
 body {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  margin: 0;
 }
 
 .container {
   max-width: 768px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 header {
   color: white;
   background-color: #15c0b0;
-  padding: 1em;
+  padding: 0.5em 2rem;
 
   img {
-    display: block;
-    width: 3em;
+    width: 2em;
   }
 }
 
 main {
+  color: #333333;
   margin: 5em 0;
 
   h3 {
     font-size: large;
     font-weight: bold;
     margin-top: 3em;
+    margin-bottom: 1rem;
   }
 
-  li::marker {
-    color: #15c0b0;
+  p,
+  li {
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: #ff60c0;
+    text-decoration: underline;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 }
 
 footer {
   color: white;
-  background-color: black;
+  background-color: #333333;
   padding: 5em 0;
 
   p {
     font-size: small;
     text-align: center;
-    margin: 0;
   }
 }
