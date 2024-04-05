@@ -5,6 +5,11 @@
 title: bio
 ---
 
+<div style="text-align: center;">
+    <img src="/assets/images/icon.jpg" alt="tide" width="100" />
+    <br /><br />tide
+</div>
+
 ### 概要
 
 専門は自然言語処理とそれに伴う深層学習。感情がわかるチャットボットや、ニューラルモデルの常識推論に向けた知識ベースを研究。
