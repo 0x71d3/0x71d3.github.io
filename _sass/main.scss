@@ -1,11 +1,10 @@
 body {
   font-family: "Zen Kaku Gothic New", sans-serif;
+  min-height: 100dvh;
 }
 
-.container {
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 0 2rem;
+a:hover {
+  opacity: 0.8;
 }
 
 header {
@@ -17,7 +16,8 @@ header {
   padding: 0 2rem;
 
   img {
-    width: 3em;
+    width: 3rem;
+    margin-left: -0.9rem;
   }
 
   nav {
@@ -29,8 +29,8 @@ header {
     }
   }
 
-  &.header--home {
-    background-color: unset;
+  &:is(.header--home) {
+    background-color: transparent;
     position: absolute;
     top: 0;
     right: 0;
@@ -39,89 +39,84 @@ header {
 }
 
 main {
-  color: #333333;
-  margin: 5em 0;
+  &:not(:is(.main--home)) {
+    color: #333333;
+    margin: 5em 0;
 
-  h1 {
-    font-size: 2rem;
-    font-weight: 900;
-    margin-bottom: 2rem;
-  }
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
 
-  h3 {
-    font-size: large;
-    font-weight: bold;
-    margin-top: 3em;
-    margin-bottom: 1rem;
-  }
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+    }
 
-  p,
-  li {
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-  }
+    h3 {
+      font-size: large;
+      font-weight: bold;
+      margin-top: 3em;
+      margin-bottom: 1rem;
+    }
 
-  a {
-    color: #ff60c0;
-    text-decoration: underline;
+    p,
+    li {
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
 
-    &:hover {
-      filter: brightness(0.9);
+    a {
+      color: #ff60c0;
+      text-decoration: underline;
     }
   }
 
-  &.main--home {
+  &:is(.main--home) {
     color: white;
     background-color: #15c0b0;
-    height: 100vh;
+    height: 100dvh;
     display: grid;
     place-items: center;
-    margin: 0;
 
-    a {
-      color: white;
-      text-decoration: none;
-
-      &:hover {
-        filter: none;
-        opacity: 0.8;
-      }
+    a:hover {
+      filter: none;
+      opacity: 0.8;
     }
 
     .container {
-      max-width: none;
-      margin: 0;
-      padding: 0;
       position: relative;
 
       .icon {
-        width: 33vw;
-        height: 33vw;
         position: relative;
-
-        @keyframes loop {
-          from {
-            transform: translateX(0%);
-          }
-
-          to {
-            transform: translateY(-10%);
-          }
-        }
 
         img {
           display: block;
-          width: 100%;
-          height: 100%;
-          position: absolute;
+          width: 33vw;
+          height: 33vw;
 
           &:first-child {
+            @keyframes loop {
+              from {
+                transform: translateX(0%);
+              }
+
+              to {
+                transform: translateY(-10%);
+              }
+            }
+
+            position: absolute;
             animation: ease-in-out 2s infinite alternate loop;
           }
         }
       }
 
       .social {
+        width: 100vw;
+        margin-inline: calc(50% - 50vw);
         position: absolute;
         right: 0;
         bottom: -3rem;
@@ -130,29 +125,21 @@ main {
         ul {
           display: flex;
           justify-content: center;
-          align-items: center;
           gap: 2rem;
 
           li {
-            margin-bottom: 0;
-
             img {
               display: block;
               width: 18px;
               height: 18px;
             }
-          }
 
-          .social__huggingface,
-          .social__kaggle {
-            img {
+            &:is(.social__huggingface, .social__kaggle) img {
               filter: invert(1);
               mix-blend-mode: screen;
             }
-          }
 
-          .social__huggingface {
-            a:hover {
+            &:is(.social__huggingface) a:hover {
               mix-blend-mode: screen;
             }
           }
@@ -164,7 +151,6 @@ main {
 
 footer {
   color: white;
-  background-color: #333333;
   padding: 5em 0;
 
   p {
@@ -172,8 +158,14 @@ footer {
     text-align: center;
   }
 
-  &.footer--home {
-    background-color: unset;
+  &:not(:is(.footer--home)) {
+    background-color: #333333;
+    position: sticky;
+    top: 100%;
+  }
+
+  &:is(.footer--home) {
+    background-color: transparent;
     position: absolute;
     right: 0;
     bottom: 0;
