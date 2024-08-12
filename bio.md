@@ -1,14 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 title: bio
+layout: default
 ---
-
-<div style="text-align: center;">
-    <img src="/assets/images/icon.jpg" alt="tide" width="100" />
-    <br /><br />tide
-</div>
 
 ### 概要
 
