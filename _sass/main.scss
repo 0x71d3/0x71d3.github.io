@@ -78,6 +78,16 @@ main {
     place-items: center;
     margin: 0;
 
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        filter: none;
+        opacity: 0.8;
+      }
+    }
+
     .container {
       max-width: none;
       margin: 0;
@@ -121,7 +131,7 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 3rem;
+          gap: 2rem;
 
           li {
             margin-bottom: 0;
@@ -130,7 +140,20 @@ main {
               display: block;
               width: 18px;
               height: 18px;
+            }
+          }
+
+          .social__huggingface,
+          .social__kaggle {
+            img {
               filter: invert(1);
+              mix-blend-mode: screen;
+            }
+          }
+
+          .social__huggingface {
+            a:hover {
+              mix-blend-mode: screen;
             }
           }
         }
