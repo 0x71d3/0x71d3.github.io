@@ -29,7 +29,7 @@ header {
     }
   }
 
-  &:is(.header--home) {
+  &:is(.home) {
     background-color: transparent;
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ header {
 }
 
 main {
-  &:not(:is(.main--home)) {
+  &:not(:is(.home)) {
     color: #333333;
     margin: 5em 0;
 
@@ -74,7 +74,7 @@ main {
     }
   }
 
-  &:is(.main--home) {
+  &:is(.home) {
     color: white;
     background-color: #15c0b0;
     height: 100dvh;
@@ -158,13 +158,13 @@ footer {
     text-align: center;
   }
 
-  &:not(:is(.footer--home)) {
+  &:not(:is(.home)) {
     background-color: #333333;
     position: sticky;
     top: 100%;
   }
 
-  &:is(.footer--home) {
+  &:is(.home) {
     background-color: transparent;
     position: absolute;
     right: 0;
