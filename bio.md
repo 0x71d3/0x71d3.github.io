@@ -56,5 +56,5 @@ layout: default
 - 2023年3月<br>[日本語版COMET-ATOMIC](https://github.com/nlp-waseda/comet-atomic-ja) 公開
 - 2021年12月-2022年5月<br>GPT-2日本語Pretrainedモデル 公開 [jawiki版](https://huggingface.co/nlp-waseda/gpt2-small-japanese-wikipedia) [jawiki+cc100版](https://huggingface.co/nlp-waseda/gpt2-small-japanese)
 - 2021年9月<br>ドコモハッカソン チーム優勝
-- 2021年-2023年<br>LINE株式会社共同研究「超大規模日本語言語モデルを用いた対話システムの研究」開始
+- 2021年-2023年<br>LINE株式会社共同研究 超大規模日本語言語モデルを用いた対話システムの研究 開始
 - 2020年-2023年<br>[河原研究室](https://nlp-waseda.jp/) 配属
